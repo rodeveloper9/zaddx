@@ -419,22 +419,22 @@
                     <h4 class="modal-title">Send us <span class="primary_color">your</span> requirement</h4>
                 </div>
                 <div class="modal-body">
-                    <form class="form zxForm" action="" id="conatctForm">
+                    <form class="form zxForm" method="post" action="form.php" id="conatctForm">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="name" placeholder="Full Name">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="skype" placeholder="Your SKype Id">
+                            <input type="text" class="form-control" name="skype" id="skype" placeholder="Your SKype Id (Optional)">
                         </div>
                         <div class="form-group">
-                            <input type="number" class="form-control" id="number" placeholder="Contact Number">
+                            <input type="number" class="form-control" name="number" id="number" placeholder="Contact Number" required>
                         </div>
 
                         <div class="form-group">
-                            <textarea class="form-control" rows="5" id="comment" placeholder="Description"></textarea>
+                            <textarea class="form-control" rows="5" name="comment" id="comment" placeholder="Message (Optional)"></textarea>
                         </div>
                         <button type="submit" class="quoteBtn">Submit</button>
                     </form>

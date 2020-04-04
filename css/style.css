@@ -253,7 +253,7 @@ nav {
     color: #fff;
     text-transform: uppercase;
     background:  #e93035;
-    transition: all .5s ease-out;
+    transition: all .4s ease-out;
     display: inline-block;
     cursor: pointer;
     border: 2px solid #e93035;
@@ -262,8 +262,9 @@ nav {
 .quoteBtn:hover,
 .quoteBtn:focus {
     background: #fff;
-    transition: all .5s ease-out;
+    transition: all .4s ease-out;
     color: #e93035;
+    outline: 0;
 }
 
 #enquiryModal .modal-dialog {
