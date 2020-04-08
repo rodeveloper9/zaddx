@@ -17,7 +17,7 @@
         <header class="header ">
             <div class="container">
                 <nav>
-                    <a href="#"><img src="./images/logo.png" class="logo" /></a>
+                    <a href="#"><img src="images/logo.png" class="logo" /></a>
                     <div class="topcontact">
                         <a class="topcontact__details" href="tel:9568965235"><i class="fas fa-phone-alt"></i>
                             +91-9568965235</a>
@@ -88,24 +88,28 @@
                                     <input type="text" class="form-control form-field" id="name" name="name"
                                         placeholder="Name" />
                                     <img src="./images/icons/user.svg" class="field-icon" />
+                                    <div class="errorMsg name">Please enter Name</div>
                                 </div>
 
                                 <div class="form-group field-container">
                                     <input type="email" class="form-control form-field" id="email" name="email"
                                         placeholder="Email" />
                                     <img src="./images/icons/mail.svg" class="field-icon" />
+                                    <div class="errorMsg email">Please enter Email</div>
                                 </div>
 
                                 <div class="form-group field-container">
-                                    <input type="text" class="form-control form-field" id="phone" name="phone"
+                                    <input type="text" class="form-control form-field" id="number" name="phone"
                                         placeholder="Phone" />
                                     <img src="./images/icons/phone.svg" class="field-icon" />
+                                    <div class="errorMsg number">Please enter Valid Number</div>
                                 </div>
 
                                 <div class="form-group field-container">
-                                    <textarea class="form-control form-field" rows="4" id="brief" name="brief"
+                                    <textarea class="form-control form-field" rows="4" id="comment" name="brief"
                                         placeholder="Project Brief / Project Link"></textarea>
                                     <img src="./images/icons/project.svg" class="field-icon" />
+                                    <div class="errorMsg comment">Please enter Valid Number</div>
                                 </div>
 
                                 <div class="form-group form-upload">
@@ -118,7 +122,8 @@
                                 </div>
 
                                 <div class="btn-container center">
-                                    <button type="button" id="form_btn" name="" class="quoteBtn">Submit</button>
+                                    <button type="submit" id="send_email" name="" class="quoteBtn">Submit</button>
+                                    <img src="images/loader.svg" class="btnLoader" id="btnLoader" />
                                 </div>
                             </form>
                         </div>
@@ -394,9 +399,10 @@
                 <div class="modal-body">
                     <form>
                         <input type="number" class="form-control" placeholder="Enter Number" />
-                        <button type="button" id="form_btn" name="" class="quoteBtn">Submit</button>
+                        <button type="submit" id="form_btn" name="" class="quoteBtn">Submit</button>
                     </form>
-                    <p class="form-note"><span class="primary_color">NOTE:</span> Message with code <span class="primary_color">ZEDXNEW</span> and get first page free</p>
+                    <p class="form-note"><span class="primary_color">NOTE:</span> Message with code <span
+                            class="primary_color">ZEDXNEW</span> and get first page free</p>
                 </div>
             </div>
         </div>
@@ -419,24 +425,32 @@
                     <h4 class="modal-title">Send us <span class="primary_color">your</span> requirement</h4>
                 </div>
                 <div class="modal-body">
-                    <form class="form zxForm" method="post" action="form.php" id="conatctForm">
+                    <form class="form zxForm" method="" id="enquiryForm">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
+                            <input type="text" class="form-control" id="name" placeholder="Full Name">
+                            <div class="errorMsg name">Please enter Name</div>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                                required>
+                            <div class="errorMsg email">Please enter valid Email</div>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" name="skype" id="skype" placeholder="Your SKype Id (Optional)">
+                            <input type="text" class="form-control" name="skype" id="skype"
+                                placeholder="Your SKype Id (Optional)">
                         </div>
                         <div class="form-group">
-                            <input type="number" class="form-control" name="number" id="number" placeholder="Contact Number" required>
+                            <input type="number" class="form-control" name="number" id="number"
+                                placeholder="Contact Number" required>
+                            <div class="errorMsg number">Please enter valid Number</div>
                         </div>
-
                         <div class="form-group">
-                            <textarea class="form-control" rows="5" name="comment" id="comment" placeholder="Message (Optional)"></textarea>
+                            <textarea class="form-control" rows="5" name="comment" id="comment"
+                                placeholder="Message (Optional)"></textarea>
                         </div>
-                        <button type="submit" class="quoteBtn">Submit</button>
+                        <!-- <button type="submit" name="submit" class="quoteBtn">Submit</button> -->
+                        <button type="submit" id="send_email" class="quoteBtn">SUBMIT</button>
+                        <img src="images/loader.svg" class="btnLoader" id="btnLoader" />
                     </form>
                 </div>
                 <!-- <div class="modal-footer">
@@ -447,6 +461,9 @@
         </div>
     </div>
 
+    <!--Errpr and success message container-->
+    <p id="seccess_message" class="strip"></p>
+    <p id="error_message" class="strip"></p>
 
     <script src="./js/jquery.js"></script>
     <script src="./js/slick.js"></script>

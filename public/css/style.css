@@ -97,6 +97,37 @@ img {
     width: 15px;
 }
 
+.errorMsg {
+    color: #ff0000;
+    font-size: 12px;
+    padding-top: 5px;
+    display: none;
+}
+.strip {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    display: none;
+}
+
+#seccess_message {
+    background: green;
+}
+
+#error_message {
+    background: red;
+}
+
+.btnLoader {
+    width: 60px;
+    display: none;
+}
+
 /* Form field css */
 .field-container {
     position: relative;
