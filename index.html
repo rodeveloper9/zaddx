@@ -18,18 +18,22 @@
             <div class="container">
                 <nav>
                     <a href="#"><img src="./images/logo.png" class="logo" /></a>
-                    <div class="topcontact">
+                    <!-- <div class="topcontact">
                         <a class="topcontact__details" href="tel:9568965235"><i class="fas fa-phone-alt"></i>
                             +91-9568965235</a>
                         <a class="topcontact__details" href="mailto:info@zaddx.com"><i class="fas fa-envelope"></i>
                             info@zaddx.com</a>
-                        <a class="topcontact__details" href="mailto:info@zaddx.com"><i class="fas fa-envelope"></i>
-                            info@zaddx.com</a>
-                    </div>
+                    </div> -->
                     <div class="topsocial">
-                        <a href="https://www.facebook.com" target="_blank"><img src="./images/fb.png"
+                        <a href="https://api.whatsapp.com/send?phone=918875603044" target="_blank"><img
+                                src="./images/icons/whatsappOrig.svg" class="topsocial__icon" /></a>
+                        <a href="mailto:info@zaddx.com" target="_blank"><img src="./images/icons/mailHeader.svg"
                                 class="topsocial__icon" /></a>
-                        <a href="https://www.twitter.com" target="_blank"><img src="./images/twitter.png"
+                        <a href="tel:08875603044"><img src="./images/icons/phone-call.svg"
+                                class="topsocial__icon" /></a>
+                        <a href="https://www.facebook.com/zaddx" target="_blank"><img src="./images/fb.png"
+                                class="topsocial__icon" /></a>
+                        <a href="https://twitter.com/Zeddx4" target="_blank"><img src="./images/twitter.png"
                                 class="topsocial__icon" /></a>
                         <a href="https://www.instagram.com" target="_blank"><img src="./images/insta.png"
                                 class="topsocial__icon" /></a>
@@ -83,47 +87,49 @@
                     <div class="col-md-4">
                         <div class="banner__form">
                             <h4 class="section_head center">Request a <span class="primary_color">free</span> quote</h4>
-                            <form class="contactForm">
+                            <form class="contactForm" action="form.php" method="post">
                                 <div class="form-group field-container">
                                     <input type="text" class="form-control form-field" id="name" name="name"
-                                        placeholder="Name" />
+                                        placeholder="Name" required />
                                     <img src="./images/icons/user.svg" class="field-icon" />
-                                    <div class="errorMsg name">Please enter Name</div>
                                 </div>
 
                                 <div class="form-group field-container">
                                     <input type="email" class="form-control form-field" id="email" name="email"
-                                        placeholder="Email" />
+                                        placeholder="Email" required />
                                     <img src="./images/icons/mail.svg" class="field-icon" />
-                                    <div class="errorMsg email">Please enter Email</div>
                                 </div>
 
                                 <div class="form-group field-container">
-                                    <input type="text" class="form-control form-field" id="number" name="phone"
-                                        placeholder="Phone" />
+                                    <input type="text" class="form-control form-field" id="number" name="number"
+                                        placeholder="Contact Number" required />
                                     <img src="./images/icons/phone.svg" class="field-icon" />
-                                    <div class="errorMsg number">Please enter Valid Number</div>
                                 </div>
 
                                 <div class="form-group field-container">
-                                    <textarea class="form-control form-field" rows="4" id="comment" name="brief"
+                                    <input type="text" class="form-control form-field" name="skype" id="skype"
+                                        placeholder="SKype Id (Optional)">
+                                    <img src="./images/icons/skype.svg" class="field-icon">
+                                </div>
+
+                                <div class="form-group field-container">
+                                    <textarea class="form-control form-field" rows="4" id="comment" name="comment"
                                         placeholder="Project Brief / Project Link"></textarea>
                                     <img src="./images/icons/project.svg" class="field-icon" />
-                                    <div class="errorMsg comment">Please enter Valid Number</div>
                                 </div>
 
-                                <div class="form-group form-upload">
+                                <!-- File Upload  -->
+                                <!-- <div class="form-group form-upload">
                                     <p><img src="./images/icons/attach.svg" class="form-upload-icon icon" /> <span
                                             class="form-upload-label">Attachments (if any)</span></p>
                                     <div class="file-uploader__message-area"></div>
                                     <div class="file-chooser">
                                         <input class="file-chooser__input" type="file">
                                     </div>
-                                </div>
-
+                                </div> -->
+                                <!-- file upload end -->
                                 <div class="btn-container center">
-                                    <button type="submit" id="send_email" name="" class="quoteBtn">Submit</button>
-                                    <img src="images/loader.svg" class="btnLoader" id="btnLoader" />
+                                    <button type="submit" id="send_email" name="submit" class="quoteBtn">Submit</button>
                                 </div>
                             </form>
                         </div>
@@ -179,13 +185,15 @@
                         <div class="benefits_help center">
                             <h4 class="page_head">Need Help ?</h4>
 
-                            <a href="#" class="benefits_help--list"><img src="./images/icons/whatsapp.svg"
-                                    class="benefits_help--icon" /> <span>+91- 8310125896</span></a>
+                            <a href="https://api.whatsapp.com/send?phone=918875603044" target="_blank"
+                                class="benefits_help--list"><img src="./images/icons/whatsapp.svg"
+                                    class="benefits_help--icon" /> <span>+91- 8875603044</span></a>
 
-                            <a href="#" class="benefits_help--list"><img src="./images/icons/mail.svg"
-                                    class="benefits_help--icon" /> <span>info@zaddx.com</span></a>
+                            <a href="mailto:info@zaddx.com" class="benefits_help--list"><img
+                                    src="./images/icons/mail.svg" class="benefits_help--icon" />
+                                <span>info@zaddx.com</span></a>
 
-                            <a href="#" class="benefits_help--list"><img src="./images/icons/skype.svg"
+                            <a href="skype:zaddx9?add" class="benefits_help--list"><img src="./images/icons/skype.svg"
                                     class="benefits_help--icon" /> <span>zaddx9</span></a>
                         </div>
                     </div>
@@ -270,54 +278,96 @@
             <div class="container testimonialSlide">
                 <div class="testimonialSlide__box">
                     <img src="./images/quotation-mark.svg" class="testimonialSlide__box--mark">
-                    <p class="testimonialSlide__box--text">Lorem Ipsum is simply dummy text of the printing and
-                        typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <h4 class="testimonialSlide__box--head">Wordpress Theme Customization</h4>
+                    <p class="testimonialSlide__box--text">Thank you for the wonderful job you and your company did.
+                        Please pass along my sincere thanks to your staff that had a hand in developing our site. Staff
+                        at Zaddx are responsive to requests, usually providing and answer the same day.</p>
                     <figure class="testimonialSlide__box--clientDetail">
-                        <img src="./images/img-4.jpg" class="testimonialSlide__box--clientImg">
-                        <p class="testimonialSlide__box--clientName">Client Name <span
-                                class="primary_color">(Designation)</span>
-                        </p>
+                        <img src="./images/Clients/Majeed_Raza.jpg" class="testimonialSlide__box--clientImg">
+                        <p class="testimonialSlide__box--clientName">Majeed Raza</p>
                     </figure>
                 </div>
 
 
                 <div class="testimonialSlide__box">
                     <img src="./images/quotation-mark.svg" class="testimonialSlide__box--mark">
-                    <p class="testimonialSlide__box--text">Lorem Ipsum is simply dummy text of the printing and
-                        typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <h4 class="testimonialSlide__box--head">PSD to HTML</h4>
+                    <p class="testimonialSlide__box--text">I must say working with Zaddx & his team has been a pleasure.
+                        They took some broken code done by an earlier Company, streamlined it, & added some
+                        improvements. The site is more professional and faster! Great Job! They get the job done and
+                        they do good work.</p>
                     <figure class="testimonialSlide__box--clientDetail">
                         <img src="./images/clientImg.jpg" class="testimonialSlide__box--clientImg">
-                        <p class="testimonialSlide__box--clientName">Client Name <span
-                                class="primary_color">(Designation)</span>
-                        </p>
+                        <p class="testimonialSlide__box--clientName">Afu Taumoepeau</p>
                     </figure>
                 </div>
 
                 <div class="testimonialSlide__box">
                     <img src="./images/quotation-mark.svg" class="testimonialSlide__box--mark">
-                    <p class="testimonialSlide__box--text">Lorem Ipsum is simply dummy text of the printing and
-                        typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <h4 class="testimonialSlide__box--head">PSD to HTML</h4>
+                    <p class="testimonialSlide__box--text">Zaddx is just great. When I have a question they answer it at
+                        once, they have more than an outstanding customer service. Thank you.</p>
                     <figure class="testimonialSlide__box--clientDetail">
-                        <img src="./images/img-4.jpg" class="testimonialSlide__box--clientImg">
-                        <p class="testimonialSlide__box--clientName">Client Name <span
-                                class="primary_color">(Designation)</span>
-                        </p>
+                        <img src="./images/Clients/sean.jpg" class="testimonialSlide__box--clientImg">
+                        <p class="testimonialSlide__box--clientName">Sean Woodward</p>
                     </figure>
                 </div>
 
                 <div class="testimonialSlide__box">
                     <img src="./images/quotation-mark.svg" class="testimonialSlide__box--mark">
-                    <p class="testimonialSlide__box--text">Lorem Ipsum is simply dummy text of the printing and
-                        typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <h4 class="testimonialSlide__box--head">Sketch to HTML+SCSS/CSS</h4>
+                    <p class="testimonialSlide__box--text">Zaddx Best website development company in Noida.Thanks</p>
                     <figure class="testimonialSlide__box--clientDetail">
-                        <img src="./images/clientImg.jpg" class="testimonialSlide__box--clientImg">
-                        <p class="testimonialSlide__box--clientName">Client Name <span
-                                class="primary_color">(Designation)</span>
-                        </p>
+                        <img src="./images/Clients/Nyle_Budilmi.jpg" class="testimonialSlide__box--clientImg">
+                        <p class="testimonialSlide__box--clientName">Nyle Budimlic</p>
+                    </figure>
+                </div>
+
+                <div class="testimonialSlide__box">
+                    <img src="./images/quotation-mark.svg" class="testimonialSlide__box--mark">
+                    <h4 class="testimonialSlide__box--head">Web Development and Management</h4>
+                    <p class="testimonialSlide__box--text">I am really happy with your service, it is exceptional, Zaddx
+                        is just great. When I have a question they answer it at once, they have more than an outstanding
+                        customer service. After having a bad experience with my old Web Designer Company, I would say
+                        that Zaddx people are very professional and their knowledge is incredible, they also solve
+                        problems very fast, I am impressed. I recommend Zaddx to all my customers, friends and clients.
+                    </p>
+                    <figure class="testimonialSlide__box--clientDetail">
+                        <img src="./images/Clients/Jacob_Pino.jpg" class="testimonialSlide__box--clientImg">
+                        <p class="testimonialSlide__box--clientName">Jacob Pino</p>
+                    </figure>
+                </div>
+
+                <div class="testimonialSlide__box">
+                    <img src="./images/quotation-mark.svg" class="testimonialSlide__box--mark">
+                    <h4 class="testimonialSlide__box--head">HTML Development</h4>
+                    <p class="testimonialSlide__box--text">I would like to thank for Zaddx because this company perform
+                        good work on my project.</p>
+                    <figure class="testimonialSlide__box--clientDetail">
+                        <img src="./images/Clients/Chris_seveney.jpg" class="testimonialSlide__box--clientImg">
+                        <p class="testimonialSlide__box--clientName">Chris seveney</p>
+                    </figure>
+                </div>
+
+                <div class="testimonialSlide__box">
+                    <img src="./images/quotation-mark.svg" class="testimonialSlide__box--mark">
+                    <h4 class="testimonialSlide__box--head">HTML Development</h4>
+                    <p class="testimonialSlide__box--text">Great Team to work with, really attentive and react to
+                        request immediately. Excellent work and I'm really pleased with the results.</p>
+                    <figure class="testimonialSlide__box--clientDetail">
+                        <img src="./images/Clients/SyedaNida Batool.jpg" class="testimonialSlide__box--clientImg">
+                        <p class="testimonialSlide__box--clientName">Syeda Nida Batool</p>
+                    </figure>
+                </div>
+
+                <div class="testimonialSlide__box">
+                    <img src="./images/quotation-mark.svg" class="testimonialSlide__box--mark">
+                    <h4 class="testimonialSlide__box--head">Wordpress Personal Website</h4>
+                    <p class="testimonialSlide__box--text">They provided so much more than I asked for! I am pleased
+                        with my website and the interaction with their representative.</p>
+                    <figure class="testimonialSlide__box--clientDetail">
+                        <img src="./images/Clients/edino.jpg" class="testimonialSlide__box--clientImg">
+                        <p class="testimonialSlide__box--clientName">Edino Biaggi</p>
                     </figure>
                 </div>
 
@@ -397,22 +447,17 @@
                 <span class="modaldelete" onclick="modalDelete()">X</span>
                 <h4 class="modal-title">Get <span class="primary_color">FREE</span> first page</h4>
                 <div class="modal-body">
-                    <form>
-                        <input type="number" class="form-control" placeholder="Enter Number" />
-                        <button type="submit" id="form_btn" name="" class="quoteBtn">Submit</button>
+                    <form action="form.php" method="POST">
+                        <input type="number" class="form-control" id="offerNumber" name="offerNumber"
+                            placeholder="Enter Number" required />
+                        <button type="submit" id="form_btn" name="submit" class="quoteBtn"
+                            onclick="checkCookie();">Submit</button>
                     </form>
-                    <p class="form-note"><span class="primary_color">NOTE:</span> Message with code <span
-                            class="primary_color">ZEDXNEW</span> and get first page free</p>
+                    <!-- <p class="form-note"><span class="primary_color">NOTE:</span> Message with code <span
+                            class="primary_color">ZEDXNEW</span> and get first page free</p> -->
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
     </div>
 
     <!-- Modal form-->
@@ -425,32 +470,33 @@
                     <h4 class="modal-title">Send us <span class="primary_color">your</span> requirement</h4>
                 </div>
                 <div class="modal-body">
-                    <form class="form zxForm" method="" id="enquiryForm">
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="name" placeholder="Full Name">
-                            <div class="errorMsg name">Please enter Name</div>
+                    <form class="form zxForm" method="POST" id="enquiryForm" action="form.php">
+                        <div class="form-group field-container">
+                            <input type="text" class="form-control form-field" id="name" placeholder="Name" name="name"
+                                required />
+                            <img src="./images/icons/user.svg" class="field-icon">
                         </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                                required>
-                            <div class="errorMsg email">Please enter valid Email</div>
+                        <div class="form-group field-container">
+                            <input type="email" class="form-control form-field" name="email" id="email"
+                                placeholder="Email" required />
+                            <img src="./images/icons/mail.svg" class="field-icon">
                         </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="skype" id="skype"
-                                placeholder="Your SKype Id (Optional)">
+                        <div class="form-group field-container">
+                            <input type="number" class="form-control form-field" name="number" id="number" name="number"
+                                placeholder="Contact Number" required />
+                            <img src="./images/icons/phone.svg" class="field-icon">
                         </div>
-                        <div class="form-group">
-                            <input type="number" class="form-control" name="number" id="number"
-                                placeholder="Contact Number" required>
-                            <div class="errorMsg number">Please enter valid Number</div>
+                        <div class="form-group field-container">
+                            <input type="text" class="form-control form-field" name="skype" id="skype"
+                                placeholder="SKype Id (Optional)" />
+                            <img src="./images/icons/skype.svg" class="field-icon">
                         </div>
-                        <div class="form-group">
-                            <textarea class="form-control" rows="5" name="comment" id="comment"
+                        <div class="form-group field-container">
+                            <textarea class="form-control form-field" rows="5" name="comment" id="comment"
                                 placeholder="Message (Optional)"></textarea>
+                            <img src="./images/icons/project.svg" class="field-icon">
                         </div>
-                        <!-- <button type="submit" name="submit" class="quoteBtn">Submit</button> -->
-                        <button type="submit" id="send_email" class="quoteBtn">SUBMIT</button>
-                        <img src="images/loader.svg" class="btnLoader" id="btnLoader" />
+                        <button type="submit" id="send_email" name="submit" class="quoteBtn">SUBMIT</button>
                     </form>
                 </div>
                 <!-- <div class="modal-footer">
@@ -461,10 +507,11 @@
         </div>
     </div>
 
-    <!--Errpr and success message container-->
+    <!--Error and success message container-->
     <p id="seccess_message" class="strip"></p>
     <p id="error_message" class="strip"></p>
 
+    <!-- Scripts Required -->
     <script src="./js/jquery.js"></script>
     <script src="./js/slick.js"></script>
     <script src="./js/bootstrap.min.js"></script>
@@ -472,22 +519,7 @@
     <script src="./js/multi.js"></script>
     <script src="./js/multipleFileUpload.js"></script>
     <script src="./js/custom.js"></script>
-
-    <script>
-        $(window).on("load", function () {
-            var queryData = document.querySelector('#myModal');
-            var bodyData = document.querySelector('html');
-            queryData.classList.toggle("staticmodal-on");
-            bodyData.classList.toggle("modalScroll");
-        });
-
-        function modalDelete() {
-            var queryData = document.querySelector('#myModal');
-            var bodyData = document.querySelector('html');
-            queryData.classList.toggle("staticmodal-on");
-            bodyData.classList.toggle("modalScroll");
-        };
-    </script>
+    <script src="./js/cookie.js"></script>
 </body>
 
 </html>

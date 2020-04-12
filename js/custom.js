@@ -1,3 +1,31 @@
+// To load offer form and check cookie
+$(window).on("load", function () {
+    var offer = getCookie("offer");
+    if (offer === null) {
+        var queryData = document.querySelector('#myModal');
+        var bodyData = document.querySelector('html');
+        queryData.classList.toggle("staticmodal-on");
+        bodyData.classList.toggle("modalScroll");
+    }
+});
+
+// To close Offer form 
+function modalDelete() {
+    var queryData = document.querySelector('#myModal');
+    var bodyData = document.querySelector('html');
+    queryData.classList.toggle("staticmodal-on");
+    bodyData.classList.toggle("modalScroll");
+};
+
+// To set cookie once user submit form
+function checkCookie() {
+    // Get cookie using our custom function
+    var offer = document.getElementById('offerNumber').value;
+    if (offer === '') { console.log('Offer Value') }
+    else { setCookie("offer", true, 1); }
+};
+
+// On scroll header fixed
 $(window).scroll(function () {
     var sticky = $('.header'),
         scroll = $(window).scrollTop();

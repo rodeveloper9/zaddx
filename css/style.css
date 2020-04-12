@@ -589,6 +589,8 @@ nav {
     margin-bottom: 1rem;
 }
 
+h4.testimonialSlide__box--head {margin-bottom: 5px;}
+
 .testimonialSlide .slick-slide.slick-current .testimonialSlide__box .testimonialSlide__box--text {
     color: #fff;
 }
