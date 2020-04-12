@@ -221,7 +221,7 @@ nav {
 }
 
 .topsocial__icon {
-    width: 40px;
+    width: 35px;
     margin-left: 15px;
     transition: all 0.4s ease-in-out;
 }
@@ -720,3 +720,25 @@ h4.testimonialSlide__box--head {margin-bottom: 5px;}
     font-weight: bold;
     cursor: pointer;
 }
+
+
+/* Thank you page css */
+.flex_wrapper {
+    height: calc(100vh - 85px);
+    display: flex;
+    align-items: center;
+}
+.thankyou__content {
+    width: 50%;
+    background: #fff;
+    text-align: center;
+    padding: 50px;
+    margin: auto;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+}
+.thankyou__content--head {
+    margin: 10px 0;
+    font-size: 2.5rem;
+}
+.thankyou__content .quoteBtn {margin-top: 20px;}

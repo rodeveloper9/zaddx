@@ -21,13 +21,13 @@ if (isset($_POST['submit'])) {
     
     // Additional headers
     $headers[] = 'To: Rohit <rohitdeveloper9@gmail.com>';
-    $headers[] = 'From: Enquiry Email <info@zaddx.com>';
+    $headers[] = 'From: Zaddx Enquiry <info@zaddx.com>';
     
     // Mail it
     if (mail($to, $subject, $message, implode("\r\n", $headers))) {
-        echo 'Mail sent';
+      header("Location: success.html");
     } else
-        echo 'mail not sent';
+        echo 'Please try after sometime';
 } else
     echo 'Please submit the form';
 ?>
