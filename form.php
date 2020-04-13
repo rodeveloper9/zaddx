@@ -1,5 +1,6 @@
 <?php
 if (isset($_POST['submit'])) {
+    $type    = $_POST["offer"];
     $name    = $_POST["name"];
     $email   = $_POST["email"];
     $number  = $_POST["number"];
@@ -13,7 +14,13 @@ if (isset($_POST['submit'])) {
     $subject = 'Enquiry Email from Zaddx';
     
     // Message
-    $message = "Full Name: $name.<br>" . "Email: $email.<br>" . "Number: $number.<br>" . "Skype: $skype.<br>" . "Comment: $comment.<br>";
+    if ($type === 'offer') {
+      $message = "This mail is from Offer". "Number: $number.<br>" ;
+    }
+    else {
+      $message = "Full Name: $name.<br>" . "Email: $email.<br>" . "Number: $number.<br>" . "Skype: $skype.<br>" . "Comment: $comment.<br>";
+    };
+    
     
     // To send HTML mail, the Content-type header must be set
     $headers[] = 'MIME-Version: 1.0';
@@ -24,10 +31,10 @@ if (isset($_POST['submit'])) {
     $headers[] = 'From: Zaddx Enquiry <info@zaddx.com>';
     
     // Mail it
-    if (mail($to, $subject, $message, implode("\r\n", $headers))) {
-      header("Location: success.html");
-    } else
-        echo 'Please try after sometime';
+    // if (mail($to, $subject, $message, implode("\r\n", $headers))) {
+    //   header("Location: success.html");
+    // } else
+    //     echo 'Please try after sometime';
 } else
     echo 'Please submit the form';
 ?>

@@ -1,0 +1,10 @@
+@media screen and (max-width: 767px) {
+    .logo {width: 50px;}
+    .topsocial__icon {width: 25px;}
+    .services {flex-wrap: wrap;justify-content: space-between;}
+    .services__list {width: 47%;margin-bottom: 15px;}
+    .services__list:nth-child(even) {margin-right: 0;}
+    .benefits-list {flex-wrap: wrap;margin-bottom: 0;}
+    .benefits-list-item {width: 100%;margin-bottom: 1.5rem;}
+    .benefits_help--list {width: 100%;}
+  }
