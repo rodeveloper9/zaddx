@@ -1,5 +1,5 @@
 // Service Worker
-const cacheName = "my-first-pwa";
+const cacheName = "zaddx";
 const filesToCache = [
     "/",
     "index.html",

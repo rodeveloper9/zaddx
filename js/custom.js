@@ -2,7 +2,7 @@
 $(window).on("load", function () {
     var offer = getCookie("offer");
     if (offer === null) {
-        var queryData = document.querySelector('#myModal');
+        var queryData = document.querySelector('#offerModal');
         var bodyData = document.querySelector('html');
         queryData.classList.toggle("staticmodal-on");
         bodyData.classList.toggle("modalScroll");
@@ -11,12 +11,11 @@ $(window).on("load", function () {
 
 // To close Offer form 
 function modalDelete() {
-    var queryData = document.querySelector('#myModal');
+    var queryData = document.querySelector('#offerModal');
     var bodyData = document.querySelector('html');
     queryData.classList.toggle("staticmodal-on");
     bodyData.classList.toggle("modalScroll");
 };
-
 // To set cookie once user submit form
 function checkCookie() {
     // Get cookie using our custom function
@@ -72,3 +71,18 @@ function toggleItem() {
         this.parentNode.className = 'faqContainer--list open';
     }
 }
+
+// Countdown Timer
+setInterval(function time() {
+    var dateTime = new Date();
+    var hours = 24 - dateTime.getHours() - 1;
+    var min = 60 - dateTime.getMinutes();
+    if ((min + '').length == 1) {
+        min = '0' + min;
+    }
+    var sec = 60 - dateTime.getSeconds();
+    if ((sec + '').length == 1) {
+        sec = '0' + sec;
+    }
+    $('#timer').html(hours + ':' + min + ':' + sec)
+}, 1000);

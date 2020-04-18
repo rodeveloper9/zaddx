@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
     
     // Message
     if ($type === 'offer') {
-      $message = "This mail is from Offer". "Number: $number.<br>" ;
+      $message = "This mail is from Offer". "Email Id: $email.<br>" ;
     }
     else {
       $message = "Full Name: $name.<br>" . "Email: $email.<br>" . "Number: $number.<br>" . "Skype: $skype.<br>" . "Comment: $comment.<br>";
