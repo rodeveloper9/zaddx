@@ -82,6 +82,14 @@ function toggleItem() {
     }
 }
 
+// Close FAQ outside click 
+$(document).click(function (event) {
+    if (!$(event.target).closest(".faqContainer--list, .open").length) {
+        $("body").find(".faqContainer--list").removeClass("open");
+        $("body").find(".faqContainer--list").addClass("closed");
+    }
+});
+
 // Countdown Timer
 setInterval(function time() {
     var dateTime = new Date();
@@ -96,3 +104,38 @@ setInterval(function time() {
     }
     $('#timer').html(hours + ':' + min + ':' + sec)
 }, 1000);
+
+// function for show more and less
+$(document).ready(function () {
+    var showChar = 100;  // How many characters are shown by default
+    var ellipsestext = "...";
+    var moreText = "Read More";
+    var lessText = "Read Less";
+
+    $('.showMore').each(function () {
+        var content = $(this).html();
+
+        if (content.length > showChar) {
+            var showText = content.substr(0, showChar);
+            var hideText = content.substr(showChar, content.length - showChar);
+
+            var html = showText + '<span class="moreEllipses">' + ellipsestext + '&nbsp;</span><span class="moreContent"><span>' + hideText + '</span><a href="" class="moreLink">' + moreText + '</a></span>';
+
+            $(this).html(html);
+        }
+
+    });
+
+    $(".moreLink").click(function () {
+        if ($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moreText);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lessText);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});

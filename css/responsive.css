@@ -2,7 +2,7 @@
     .floating-icon{width: 45px; padding: 10px 10px 0;}
     .staticmodal-innercontent .modal-body .modal-image {display: none;}
     .staticmodal-innercontent .modal-body .offer-form {width: 100%;padding: 10px;}
-    .staticmodal-innercontent .modal-body .offer-form .offer-form-heading {line-height: 1.2;padding: 0;font-size: 18px;}
+    .staticmodal-innercontent .modal-body .offer-form .offer-form-heading {line-height: 1.2;padding: 20px 0 0;font-size: 18px;}
     .staticmodal-on .staticmodal-innercontent {width: 95%;}
     #enquiryModal .modal-dialog { width: 95%;}
     .logo {width: 50px;}
@@ -10,6 +10,8 @@
     nav{padding: 0;}
     .menu{display: none;}
     .topsocial {width: 35%;}
+    .topsocial-link {padding: 10px 15px;font-size: 1em;}
+    .banner_head {font-size: 3.5rem;}
     .banner__content {padding-top: 0;}
     .services {flex-wrap: wrap;justify-content: space-between;}
     .services__list {width: 47%;margin-bottom: 15px;}
@@ -23,11 +25,16 @@
     .expertsContainer .experts__content {margin-bottom: 2rem;}
     .expertsContainer .experts__content:last-child {margin: 0;}
     .testimonial{padding: 5rem 0 0;}
-    .testimonialSlide.slick-slider .slick-list {height: 600px !important;}
+    .testimonialSlide.slick-slider .slick-list {height: 420px !important;}
     .faqContainer--list--title {font-size: 14px;line-height: 1.2;padding-right: 15px;}
     .faqContainer--list.open .faqContainer--list--title:after, .faqContainer--list.closed .faqContainer--list--title:after {top: 0;}
     .talk-content {width: 100%;padding: 1em;}
+    .talk-content-head, .talk-content-text {display: none;}
+    .talk-social-box {margin: 0;}
     .talk-content-head {font-size: 1.5em;}
-    .talk-icon-box {flex-wrap: wrap;margin: 1.5em 0;}
+    .talk-icon-box {margin: 1.5em 0;}
     .talk-content-link {width: 100%;margin-bottom: 15px;}
+    .fixed-bottom {width: 50px;}
+    /* Thankyou page */
+    .thankyou__content { width: 90%;}
   }

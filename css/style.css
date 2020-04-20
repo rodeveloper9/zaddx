@@ -127,6 +127,8 @@ img {
     width: 60px;
     display: none;
 }
+.moreContent span {display: none;}
+.moreLink {display: block;margin-top: 0.5em;}
 
 /* Form field css */
 .field-container {
@@ -147,17 +149,7 @@ img {
 
 /* Main CSS */
 /* Floating Icons */
-.floating-icon {
-    width: 55px;
-    position: fixed;
-    top: 25%;
-    background: #fff;
-    padding: 12px 12px 0;
-    border-radius: 3px 0 0 3px;
-    z-index: 9;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    transition: all 0.4s ease-in-out;
-}
+.floating-icon {width: 55px;position: fixed;top: 25%;background: #fff;padding: 12px 12px 0;border-radius: 3px 0 0 3px;z-index: 9;box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);transition: all 0.4s ease-in-out;}
 .social__icon {margin-bottom: 15px;transition: all 0.4s ease-in-out;}
 .social__icon:hover {transform: scale(1.2);transition: all 0.4s ease-in-out;}
 .floating-icon.right-social {right: 0;}
@@ -204,19 +196,20 @@ nav {
 .menu-link:after {position: absolute;bottom: -1px;left: 0;right: 0;margin: auto;width: 0;
     content: '.';color: transparent;background: #e93035;height: 2px;transition: all 0.5s;}
 .menu-link:hover:after {width: 100%;transition: all 0.5s;}
-.topsocial {width: 10%;text-align: right;}
+.topsocial {width: 15%;text-align: right;}
 .topsocial__icon {width: 35px;margin-left: 15px;transition: all 0.4s;}
 .topsocial__icon:hover {transform: scale(1.2);}
 .topsocial-link {
     display: inline-block;
     background: #e93035;
     color: #fff;
-    padding: 10px 15px;
+    padding: 12px 22px;
     border-radius: 3px;
     box-shadow:0 14px 26px -12px rgba(233, 48, 53, 0.77);
     transition: all 0.4s;
     letter-spacing: 1px;
     font-weight: 600;
+    font-size: 1.2em;
 }
 .topsocial-link:hover {transform: scale(1.1);transition: all 0.4s;color: #fff;}
 .topsocial-link:focus{color: #fff; outline: 0;}
@@ -569,6 +562,8 @@ h4.testimonialSlide__box--head {margin-bottom: 10px;}
 .testimonialSlide .slick-slide.slick-current .testimonialSlide__box .testimonialSlide__box--text {
     color: #fff;font-family: cursive;
 }
+.testimonialSlide .slick-slide.slick-current .testimonialSlide__box .testimonialSlide__box--head {color: #fff;}
+.testimonialSlide .slick-slide.slick-current .testimonialSlide__box .testimonialSlide__box--text .moreLink, .testimonialSlide .slick-slide.slick-current .testimonialSlide__box .testimonialSlide__box--text .moreLink:hover{color: #000}
 .testimonialSlide__box--text {font-family: cursive;letter-spacing: 0.3px;}
 
 /* FAQ */
@@ -696,24 +691,25 @@ h4.testimonialSlide__box--head {margin-bottom: 10px;}
 #timer {
     font-size: 35px;
 }
-.fixed-bottom {position: fixed;bottom: 10px;right: 0px;z-index: 1;}
-.fixed-bottom .social__icon {width: 60px;margin: 0;}
+.fixed-bottom {position: fixed;bottom: 10px;right: 5px;z-index: 1;width: 75px;}
+.fixed-bottom .social__icon {width: 100%;margin: 0;}
 
 /* contact popup */
 .offer-modal.talk-modal .modal-image {width: 40%;}
-.talk-content {width: 60%;padding: 2em;text-align: left;}
+.talk-content {width: 60%;padding: 2em;text-align: left;position: relative;}
 .talk-content-head {font-size: 2em;}
 .talk-content-text {font-size: 1.2em;margin: 5px 0;}
+.talk-content-social {text-align: center;}
 .talk-content-icon { width: 50px;transition: all 0.5s;}
-.talk-content-link {box-shadow: 0 1px 7px 0 rgba(0, 0, 0, .4); display: inline-block;background: #fff;border-radius: 30px;transition: all 0.4s;}
+.talk-content-link {box-shadow: 0 1px 7px 0 rgba(0, 0, 0, .4); display: inline-block;background: #fff;border-radius: 30px;transition: all 0.4s;width: 45%;margin-bottom: 2em;}
 .talk-content-link:hover {transform: scale(1.1);transition: all 0.4s;}
 .talk-content-link:hover .talk-content-icon {transform: rotate(360deg);transition: all 0.5s;}
-/* .talk-content-link.whatsapp {border-color: #4caf50;background: #cbf1cc;}
-.talk-content-link.mail {border-color: #f44336;background: #ffd3d0;} */
-.talk-icon-box {display: flex;justify-content: space-between;align-items: center;margin: 2em 0;}
+.talk-icon-box {display: flex;justify-content: space-between;align-items: center;margin: 2em 0 0;flex-wrap: wrap;}
 .talk-content-link span {padding: 0 10px;font-size: 1.2em;color: #555;}
 .talk-social-box {margin: 2em 0 0;text-align: center;}
 .talk-social-box .social__icon {margin-bottom: 0; width: 50px;margin-left: 15px;}
+/* .talk-content:after {content: url(../images/contactPopupBefore.jpg);position: absolute;bottom: 0;} */
+
 
 
 
