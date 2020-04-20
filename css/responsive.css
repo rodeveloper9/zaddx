@@ -7,7 +7,10 @@
     #enquiryModal .modal-dialog { width: 95%;}
     .logo {width: 50px;}
     #timer {font-size: 25px;}
-    .banner__content {padding: 0;display: flex;flex-direction: column-reverse;margin-top: 1.5rem;}
+    nav{padding: 0;}
+    .menu{display: none;}
+    .topsocial {width: 35%;}
+    .banner__content {padding-top: 0;}
     .services {flex-wrap: wrap;justify-content: space-between;}
     .services__list {width: 47%;margin-bottom: 15px;}
     .services__list:nth-child(even) {margin-right: 0;}
@@ -19,6 +22,12 @@
     .expert-line, .experts__top {display: none;}
     .expertsContainer .experts__content {margin-bottom: 2rem;}
     .expertsContainer .experts__content:last-child {margin: 0;}
-    .testimonialSlide.slick-slider .slick-list {height: auto !important;}
-    .faqContainer--list--title {font-size: 14px;line-height: 1.2;}
+    .testimonial{padding: 5rem 0 0;}
+    .testimonialSlide.slick-slider .slick-list {height: 600px !important;}
+    .faqContainer--list--title {font-size: 14px;line-height: 1.2;padding-right: 15px;}
+    .faqContainer--list.open .faqContainer--list--title:after, .faqContainer--list.closed .faqContainer--list--title:after {top: 0;}
+    .talk-content {width: 100%;padding: 1em;}
+    .talk-content-head {font-size: 1.5em;}
+    .talk-icon-box {flex-wrap: wrap;margin: 1.5em 0;}
+    .talk-content-link {width: 100%;margin-bottom: 15px;}
   }

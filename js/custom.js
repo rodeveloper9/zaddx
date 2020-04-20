@@ -1,26 +1,36 @@
+//Function to show hide modal
+function showModal(id, showClass) {
+    var queryData = document.querySelector(id);
+    var bodyData = document.querySelector('html');
+    queryData.classList.toggle(showClass);
+    bodyData.classList.toggle("modalScroll");
+}
+// Function to close modal
+function hideModal(id, showClass) {
+    var queryData = document.querySelector(id);
+    var bodyData = document.querySelector('html');
+    queryData.classList.toggle(showClass);
+    bodyData.classList.toggle("modalScroll");
+}
 // To load offer form and check cookie
 $(window).on("load", function () {
     var offer = getCookie("offer");
     if (offer === null) {
-        var queryData = document.querySelector('#offerModal');
-        var bodyData = document.querySelector('html');
-        queryData.classList.toggle("staticmodal-on");
-        bodyData.classList.toggle("modalScroll");
+        showModal('#offerModal', 'staticmodal-on')
     }
 });
 
-// To close Offer form 
-function modalDelete() {
-    var queryData = document.querySelector('#offerModal');
-    var bodyData = document.querySelector('html');
-    queryData.classList.toggle("staticmodal-on");
-    bodyData.classList.toggle("modalScroll");
-};
+// Close popup outside click 
+$(document).click(function (event) {
+    //if you click on anything except the modal itself or the "open modal" link, close the modal
+    if (!$(event.target).closest(".staticmodal, .staticmodal-on").length) {
+        $("body").find(".staticmodal").removeClass("staticmodal-on");
+    }
+});
 // To set cookie once user submit form
 function checkCookie() {
-    // Get cookie using our custom function
     var offer = document.getElementById('offerNumber').value;
-    if (offer === '') { console.log('Offer Value') }
+    if (offer === '') {''}
     else { setCookie("offer", true, 1); }
 };
 
