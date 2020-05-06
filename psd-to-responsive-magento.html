@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- other files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="icon" href="./icons/icon.png" type="image/gif" sizes="16x16">
+    <title>PSD to Responsive Magento</title>
+</head>
+
+<body>
+    <div class="psdHtml-wrapper">
+        <!-- Floating right side icons -->
+        <div class="floating-icon right-social" id="rightSocial"> </div>
+        <!-- header -->
+        <header class="header" id="header"> </header>
+        <!-- content start -->
+        <div class="detailBanner">
+            <div class="container">
+                <div class="row detailBanner__content">
+                    <div class="col-md-8">
+                        <div class="banner__left">
+                            <h1 class="banner_head"><span class="primary_color">PSD to Magento</span> Development</h1>
+                            <h4 class="banner_subhead">Our passionate team of over 470 pros has delivered more than 900 top-quality e-commerce projects to date. Get your Magento website hand-coded by the most experienced programmers in the industry.</h4>
+
+                            <a href="javascript:void(0)" onclick="showModal('#talkModal', 'staticmodal-on')" class="quoteBtn">Start a Project </a>
+
+                        </div>
+                    </div>
+
+                    <!-- Banner Form -->
+                    <div class="col-md-4">
+                        <div class="banner__form">
+                            <h4 class="section_head center">Request a <span class="primary_color">free</span> quote</h4>
+                            <form class="contactForm" action="form.php" method="post">
+                                <div class="form-group field-container">
+                                    <input type="text" class="form-control form-field" id="name" name="name"
+                                        placeholder="Name" required="">
+                                    <img src="./images/icons/user.svg" class="field-icon">
+                                </div>
+
+                                <div class="form-group field-container">
+                                    <input type="email" class="form-control form-field" id="email" name="email"
+                                        placeholder="Email" required="">
+                                    <img src="./images/icons/mail.svg" class="field-icon">
+                                </div>
+
+                                <div class="form-group field-container">
+                                    <input type="text" class="form-control form-field" id="number" name="number"
+                                        placeholder="Contact Number" required="">
+                                    <img src="./images/icons/phone.svg" class="field-icon">
+                                </div>
+
+                                <div class="form-group field-container">
+                                    <input type="text" class="form-control form-field" name="skype" id="skype"
+                                        placeholder="SKype Id (Optional)">
+                                    <img src="./images/icons/skype.svg" class="field-icon">
+                                </div>
+
+                                <div class="form-group field-container">
+                                    <textarea class="form-control form-field" rows="4" id="comment" name="comment"
+                                        placeholder="Project Brief / Project Link"></textarea>
+                                    <img src="./images/icons/project.svg" class="field-icon">
+                                </div>
+
+                                <!-- File Upload  -->
+                                <!-- <div class="form-group form-upload">
+                                    <p><img src="./images/icons/attach.svg" class="form-upload-icon icon" /> <span
+                                            class="form-upload-label">Attachments (if any)</span></p>
+                                    <div class="file-uploader__message-area"></div>
+                                    <div class="file-chooser">
+                                        <input class="file-chooser__input" type="file">
+                                    </div>
+                                </div> -->
+                                <!-- file upload end -->
+                                <div class="btn-container center">
+                                    <button type="submit" id="send_email" name="submit" class="quoteBtn">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Features -->
+        <section class="feature">
+            <h4 class="page_head center">Development Features</h4>
+            <div class="container">
+                <div class="feature_content">
+                    <div class="feature_list">
+                        <i class="fab fa-magento feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Magento Design
+                                and Integration</h4>
+                            <p class="feature_list_text">We consider your PSD or image files and convert them to a responsive & functional magento website.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature_list">
+                        <i class="fas fa-images feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Custom Magento
+                                Extension Development</h4>
+                            <p class="feature_list_text">In PSD to responsive Magento conversion, we also implement the paid extensions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature_content">
+                    <div class="feature_list">
+                        <i class="fas fa-mobile-alt feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Responsive E-Commerce Design</h4>
+                            <p class="feature_list_text">As we use the responsive designs, your resulting website will be compatible on all devices such as mobiles, tablets, desktop, laptop, TV, etc.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature_list">
+                        <i class="fas fa-language feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Multi-Lingual Support</h4>
+                            <p class="feature_list_text">Multi-lingual support feature helps you to make your website reach to anyone from different languages looking for your products/services.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature_content">
+                    <div class="feature_list">
+                        <i class="fas fa-laptop-code feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Pixel Precise & Hand-Coded Markups</h4>
+                            <p class="feature_list_text">You’ll receive the PSD converted into the pixel precise website using magento codes.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature_list">
+                        <i class="fab fa-sass feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">SASS/LESS</h4>
+                            <p class="feature_list_text">We always in the first line to achieve the top notch results by following coding standards in all our projects. Provide us your choices, we will implement them.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature_content">
+                    <div class="feature_list">
+                        <i class="fas fa-headset feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Support</h4>
+                            <p class="feature_list_text">We consider you as a part of our team. Let us know about what bothers you and we shall try our best to help you.</p>
+                        </div>
+                    </div>
+                    <div class="feature_list">
+                        <i class="fab fa-searchengin feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">SEO Friendly</h4>
+                            <p class="feature_list_text">After Converting PSD to Magento, then it is easy to use, market and also helps you to perform effective SEO.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- optional Features -->
+        <section class="optionalFeature">
+            <h4 class="page_head center">Optional Features</h4>
+            <div class="container">
+                <div class="feature_content">
+                    <div class="feature_list">
+                        <i class="fab fa-js-square feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">jQuery Implementation</h4>
+                            <p class="feature_list_text">You can select the jQuery implementation if your design requires it.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature_list">
+                        <i class="fas fa-cogs feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Customization</h4>
+                            <p class="feature_list_text">Plugins from advanced search to custom forms and member pages are all available as an optional feature when you work with us.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature_content">
+                    <div class="feature_list">
+                        <i class="fas fa-plug feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Commercial Plugin
+                                Implementations</h4>
+                            <p class="feature_list_text">From calendars and logins to voting, polling, and Google store locators.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature_list">
+                        <i class="fab fa-html5 feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">HTML Included</h4>
+                            <p class="feature_list_text">HTML pages are also included in your WordPress website along with the WordPress theme files.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature_content">
+                    <div class="feature_list">
+                        <i class="fas fa-book-reader feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Screen Readers Compatibility</h4>
+                            <p class="feature_list_text">Amazing clarity for retina-supportive devices! Especially necessary for the visually impaired.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature_list">
+                        <i class="fas fa-rocket feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Page Speed Optimization</h4>
+                            <p class="feature_list_text">This feature doesn’t only keep people on your website but also
+                                one of the important SEO aspects. We optimize images, HTML code, CSS and more.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- Why choose us -->
+        <section class="whyTeam">
+            <h4 class="page_head center">Why choose us?</h4>
+            <div class="container">
+                <div class="whyTeam_content">
+                    <div class="whyTeam_detail_box">
+                        <div class="whyTeam_detail_icon"><i class="fas fa-hands-helping"></i></div>
+                        <p class="whyTeam_detail_text">Non-Disclosure Agreement</p>
+                    </div>
+
+                    <div class="whyTeam_detail_box">
+                        <div class="whyTeam_detail_icon"><i class="fas fa-file-code"></i></div>
+                        <p class="whyTeam_detail_text">Highest Quality Markup</p>
+                    </div>
+
+                    <div class="whyTeam_detail_box">
+                        <div class="whyTeam_detail_icon"><i class="fas fa-laptop-code"></i></div>
+                        <p class="whyTeam_detail_text">Latest Browser Compatibility</p>
+                    </div>
+
+                    <div class="whyTeam_detail_box">
+                        <div class="whyTeam_detail_icon"><i class="fas fa-headset"></i></div>
+                        <p class="whyTeam_detail_text">365 Days Free Support</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Why choose us -->
+        <section class="process">
+            <h4 class="page_head center">Conversion Process</h4>
+            <div class="container">
+                <div class="delivery order_box">
+                    <div class="process_box_detail">
+                        <h4 class="process_box_head">Order</h4>
+                        <p class="process_box_text">Just give us your design files and requirements, and we will take it from there.</p>
+                    </div>
+                </div>
+                <div class="process_content">
+                    <div class="process_content_left">
+                        <div class="process_box_detail">
+                            <h4 class="process_box_head">Review</h4>
+                            <p class="process_box_text">JWe’ll work up the specs and give you a quote and estimated delivery time.</p>
+                        </div>
+                        <div class="process_box_icon"><i class="fas fa-file-code"></i></div>
+                        <div class="process_box_detail">
+                            <h4 class="process_box_head">Testing</h4>
+                            <p class="process_box_text">We thoroughly test your markup in all modern browsers, on all platforms and devices.</p>
+                        </div>
+                    </div>
+                    <div class="process_line"></div>
+                    <div class="process_content_right">
+                        <div class="process_box_icon"><i class="fas fa-file-signature"></i></div>
+                        <div class="process_box_detail">
+                            <h4 class="process_box_head">Development</h4>
+                            <p class="process_box_text">Our pros will swing into action and craft your HTML5 / CSS3 markup.</p>
+                        </div>
+                        <div class="process_box_icon"><i class="fas fa-clipboard-check"></i></i></div>
+                    </div>
+
+                </div>
+
+                <div class="delivery">
+                    <div class="process_box_detail">
+                        <h4 class="process_box_head">Delivery</h4>
+                        <p class="process_box_text">Your absolutely flawless markup is delivered to you.</p>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </section>
+
+    </div>
+    <!-- Footer -->
+    <footer class="footer" id="footer"> </footer>
+    <!-- Bottom Skype -->
+    <div class="fixed-bottom" id="bottomRight"> </div>
+    <!-- Scripts -->
+    <script src="./js/onscrollImgLoad.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/custom.js"></script>
+
+</body>
+
+</html>

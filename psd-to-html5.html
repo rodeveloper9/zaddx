@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- other files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="icon" href="./icons/icon.png" type="image/gif" sizes="16x16">
+    <title>PSD to HTML5</title>
+</head>
+
+<body>
+    <div class="psdHtml-wrapper">
+        <!-- Floating right side icons -->
+        <div class="floating-icon right-social" id="rightSocial"> </div>
+        <!-- header -->
+        <header class="header" id="header"> </header>
+        <!-- content start -->
+        <div class="detailBanner">
+            <div class="container">
+                <div class="row detailBanner__content">
+                    <div class="col-md-8">
+                        <div class="banner__left">
+                            <h1 class="banner_head"><span class="primary_color">PSD to HTML5</span> Conversion</h1>
+                            <h4 class="banner_subhead">Give us a design in any common format and receive a perfect
+                                high-quality, cross-browser compatible HTML5/CSS3 markup that you can’t get anywhere
+                                else.</h4>
+
+                            <a href="javascript:void(0)" onclick="showModal('#talkModal', 'staticmodal-on')" class="quoteBtn">Start a Project </a>
+
+                        </div>
+                    </div>
+
+                    <!-- Banner Form -->
+                    <div class="col-md-4">
+                        <div class="banner__form">
+                            <h4 class="section_head center">Request a <span class="primary_color">free</span> quote</h4>
+                            <form class="contactForm" action="form.php" method="post">
+                                <div class="form-group field-container">
+                                    <input type="text" class="form-control form-field" id="name" name="name"
+                                        placeholder="Name" required="">
+                                    <img src="./images/icons/user.svg" class="field-icon">
+                                </div>
+
+                                <div class="form-group field-container">
+                                    <input type="email" class="form-control form-field" id="email" name="email"
+                                        placeholder="Email" required="">
+                                    <img src="./images/icons/mail.svg" class="field-icon">
+                                </div>
+
+                                <div class="form-group field-container">
+                                    <input type="text" class="form-control form-field" id="number" name="number"
+                                        placeholder="Contact Number" required="">
+                                    <img src="./images/icons/phone.svg" class="field-icon">
+                                </div>
+
+                                <div class="form-group field-container">
+                                    <input type="text" class="form-control form-field" name="skype" id="skype"
+                                        placeholder="SKype Id (Optional)">
+                                    <img src="./images/icons/skype.svg" class="field-icon">
+                                </div>
+
+                                <div class="form-group field-container">
+                                    <textarea class="form-control form-field" rows="4" id="comment" name="comment"
+                                        placeholder="Project Brief / Project Link"></textarea>
+                                    <img src="./images/icons/project.svg" class="field-icon">
+                                </div>
+
+                                <!-- File Upload  -->
+                                <!-- <div class="form-group form-upload">
+                                    <p><img src="./images/icons/attach.svg" class="form-upload-icon icon" /> <span
+                                            class="form-upload-label">Attachments (if any)</span></p>
+                                    <div class="file-uploader__message-area"></div>
+                                    <div class="file-chooser">
+                                        <input class="file-chooser__input" type="file">
+                                    </div>
+                                </div> -->
+                                <!-- file upload end -->
+                                <div class="btn-container center">
+                                    <button type="submit" id="send_email" name="submit" class="quoteBtn">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Features -->
+        <section class="feature">
+            <h4 class="page_head center">Development Features</h4>
+            <div class="container">
+                <div class="feature_content">
+                    <div class="feature_list">
+                        <i class="fab fa-html5 feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Animation for HTML5</h4>
+                            <p class="feature_list_text">Looking for animation effects with HTML? We’re the ones who can provide it. Please contact us to find out more about what we can do for you.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature_list">
+                        <i class="fas fa-file-video feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Video and Audio
+                                and Other Elements</h4>
+                            <p class="feature_list_text">HTML5 offers a lot of tags, but we can utilize elements like video and audio to their maximum potential, within the scope of your project.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature_content">
+                    <div class="feature_list">
+                        <i class="fas fa-chart-pie feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Excellent Support for Graphical Representation</h4>
+                            <p class="feature_list_text">Bring your site's visual appeal to a new level with the highest quality visual representations with faster load times.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature_list">
+                        <i class="far fa-window-restore feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Responsive Websites</h4>
+                            <p class="feature_list_text">Our markup in HTML5 will ensure a responsive site that requires minimal coding.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature_content">
+                    <div class="feature_list">
+                        <i class="fab fa-sass feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">SASS/LESS</h4>
+                            <p class="feature_list_text">We use CSS Preprocessors for all our projects to meet the
+                                coding
+                                standards. Let us know your favorite and we use the same for your project.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature_list">
+                        <i class="fas fa-spinner feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">User Optimized Images</h4>
+                            <p class="feature_list_text">Image loading time is one of the important factor. In this
+                                fast-paced world no individual wait long for image to load. We optimize images in order
+                                to
+                                load faster & give best user experience for your website.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature_content">
+                    <div class="feature_list">
+                        <i class="fas fa-cubes feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Smaller File Size</h4>
+                            <p class="feature_list_text">In fact the smaller the file size is the faster loading time
+                                be. We use optimized code, images and CSS in our services.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature_list">
+                        <i class="far fa-file-code feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Semantic/Commented Markup</h4>
+                            <p class="feature_list_text">Our Semantic/Commented Markup is the benefit for future project
+                                customization purposes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature_content">
+                    <div class="feature_list">
+                        <i class="fab fa-searchengin feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">SEO-Friendly Markup</h4>
+                            <p class="feature_list_text">It is the most important aspect to get on to the top 10 results
+                                of Google. Using SEO friendly markup we ensure that your website is free of glitches
+                                while doing so.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature_list">
+                        <i class="fas fa-headset feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Support</h4>
+                            <p class="feature_list_text">Our support is built to answer all the queries that bother you.
+                                Notify us with your queries we are happy to serve you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- optional Features -->
+        <section class="optionalFeature">
+            <h4 class="page_head center">Optional Features</h4>
+            <div class="container">
+                <div class="feature_content">
+                    <div class="feature_list">
+                        <i class="fas fa-paperclip feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Sticky Footer</h4>
+                            <p class="feature_list_text">Sticky footer feature helps you to convey the message that you
+                                wish to your audiences. It stays at the bottom of the page regardless of the resolution
+                                of your website.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature_list">
+                        <i class="fas fa-laptop-code feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Cross Device Compatibility</h4>
+                            <p class="feature_list_text">This feature helps your website to look same on ipad, iphone
+                                and android devices. Stop worrying about your websites shabby look on small devices or
+                                phones. It enhances the user-engagement on the website.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature_content">
+                    <div class="feature_list">
+                        <i class="fab fa-css3-alt feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">CSS Frameworks</h4>
+                            <p class="feature_list_text">There are varied CSS frameworks we offer to choose from. Some
+                                of them are 960 grids less framework, Blueprint & more.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature_list">
+                        <i class="fas fa-file-invoice feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Microformat and Schema</h4>
+                            <p class="feature_list_text">It’s a web-based approach to semantic markup allows using
+                                existing HTML code & tags for conveying meta data. This feature helps you to see the
+                                greater consistency.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature_content">
+                    <div class="feature_list">
+                        <i class="fas fa-book-reader feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Screen Readers Compatibility</h4>
+                            <p class="feature_list_text">We develop websites with screen readers compatibility to help
+                                visually impaired can also check your website. With the help of screen readers your
+                                websites text is converted into synthesized audio it makes them to understand your
+                                website better.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature_list">
+                        <i class="fas fa-rocket feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Page Speed Optimization</h4>
+                            <p class="feature_list_text">This feature doesn’t only keep people on your website but also
+                                one of the important SEO aspects. We optimize images, HTML code, CSS and more.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- Why choose us -->
+        <section class="whyTeam">
+            <h4 class="page_head center">Why choose us?</h4>
+            <div class="container">
+                <div class="whyTeam_content">
+                    <div class="whyTeam_detail_box">
+                        <div class="whyTeam_detail_icon"><i class="fas fa-hands-helping"></i></div>
+                        <p class="whyTeam_detail_text">Non-Disclosure Agreement</p>
+                    </div>
+
+                    <div class="whyTeam_detail_box">
+                        <div class="whyTeam_detail_icon"><i class="fas fa-file-code"></i></div>
+                        <p class="whyTeam_detail_text">Highest Quality Markup</p>
+                    </div>
+
+                    <div class="whyTeam_detail_box">
+                        <div class="whyTeam_detail_icon"><i class="fas fa-laptop-code"></i></div>
+                        <p class="whyTeam_detail_text">Latest Browser Compatibility</p>
+                    </div>
+
+                    <div class="whyTeam_detail_box">
+                        <div class="whyTeam_detail_icon"><i class="fas fa-headset"></i></div>
+                        <p class="whyTeam_detail_text">365 Days Free Support</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Why choose us -->
+        <section class="process">
+            <h4 class="page_head center">Conversion Process</h4>
+            <div class="container">
+                <div class="delivery order_box">
+                    <div class="process_box_detail">
+                        <h4 class="process_box_head">Order</h4>
+                        <p class="process_box_text">Just give us your design files and requirements, and we will take it from there.</p>
+                    </div>
+                </div>
+                <div class="process_content">
+                    <div class="process_content_left">
+                        <div class="process_box_detail">
+                            <h4 class="process_box_head">Review</h4>
+                            <p class="process_box_text">JWe’ll work up the specs and give you a quote and estimated delivery time.</p>
+                        </div>
+                        <div class="process_box_icon"><i class="fas fa-file-code"></i></div>
+                        <div class="process_box_detail">
+                            <h4 class="process_box_head">Testing</h4>
+                            <p class="process_box_text">We thoroughly test your markup in all modern browsers, on all platforms and devices.</p>
+                        </div>
+                    </div>
+                    <div class="process_line"></div>
+                    <div class="process_content_right">
+                        <div class="process_box_icon"><i class="fas fa-file-signature"></i></div>
+                        <div class="process_box_detail">
+                            <h4 class="process_box_head">Development</h4>
+                            <p class="process_box_text">Our pros will swing into action and craft your HTML5 / CSS3 markup.</p>
+                        </div>
+                        <div class="process_box_icon"><i class="fas fa-clipboard-check"></i></i></div>
+                    </div>
+
+                </div>
+
+                <div class="delivery">
+                    <div class="process_box_detail">
+                        <h4 class="process_box_head">Delivery</h4>
+                        <p class="process_box_text">Your absolutely flawless markup is delivered to you.</p>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </section>
+
+    </div>
+    <!-- Footer -->
+    <footer class="footer" id="footer"> </footer>
+    <!-- Bottom Skype -->
+    <div class="fixed-bottom" id="bottomRight"> </div>
+    <!-- Scripts -->
+    <script src="./js/onscrollImgLoad.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/custom.js"></script>
+
+</body>
+
+</html>

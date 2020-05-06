@@ -1,4 +1,9 @@
 @media screen and (max-width: 767px) {
+    .mobileMenu {display: block;}
+    .mobileMenu__content {height: 100vh;width: 0;position: fixed;z-index: 1;top: 0;left: 0;background-image: linear-gradient(to right, #E93035 70%, #fff 30%);overflow-x: hidden;transition: 0.5s;}
+    .mobileMenu__link {padding: 15px 25px;display: block;color: #fff;text-transform: uppercase;border-bottom: 1px solid #fff;}
+    .mobile-bar {font-size:30px;cursor:pointer;color: #E93035;}
+    .closebtn {font-size: 4rem;color: #E93035;position: absolute;right: 15px;top: 0;}
     .floating-icon{width: 45px; padding: 10px 10px 0;}
     .staticmodal-innercontent .modal-body .modal-image {display: none;}
     .staticmodal-innercontent .modal-body .offer-form {width: 100%;padding: 10px;}
@@ -37,4 +42,18 @@
     .fixed-bottom {width: 50px;}
     /* Thankyou page */
     .thankyou__content { width: 90%;}
+    /* technology details page */
+    .detailBanner__content {flex-wrap: wrap;}
+    .detailBanner__content .banner__left {width: 100%; margin-bottom: 2rem;}
+    .detailBanner__content .col-md-4 {width: 100%;}
+    .feature_content, .whyTeam_content{width: 100%;flex-wrap: wrap;margin: 0;}
+    .feature_list, .whyTeam_detail_box {width: 100%; margin-right: 0;margin-bottom: 1.5em;}
+    .whyTeam_detail_box:last-child {margin-bottom: 0;}
+    .delivery, .process_content {width: 100%;}
+    .process_content_left, .process_content_right {width: 50%;}
+    .process_content_left {margin-left: 0;}
+    .process_content_left {margin-right: 15px;}
+    .process_box_icon:after {width: 40px;}
+    .order_box:after {left: 44.7%;}
+  
   }

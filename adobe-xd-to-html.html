@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- other files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="icon" href="./icons/icon.png" type="image/gif" sizes="16x16">
+    <title>Adobe XD to HTML</title>
+</head>
+
+<body>
+    <div class="psdHtml-wrapper">
+        <!-- Floating right side icons -->
+        <div class="floating-icon right-social" id="rightSocial"> </div>
+        <!-- header -->
+        <header class="header" id="header"> </header>
+        <!-- content start -->
+        <div class="detailBanner">
+            <div class="container">
+                <div class="row detailBanner__content">
+                    <div class="col-md-8">
+                        <div class="banner__left">
+                            <h1 class="banner_head"><span class="primary_color">Adobe XD to HTML</span> Conversion</h1>
+                            <h4 class="banner_subhead">Give us a design in Adobe XD and receive a perfect high-quality, cross-browser compatible HTML5/CSS3 markup that you can’t get anywhere  else.</h4>
+
+                            <a href="javascript:void(0)" onclick="showModal('#talkModal', 'staticmodal-on')" class="quoteBtn">Start a Project </a>
+
+                        </div>
+                    </div>
+
+                    <!-- Banner Form -->
+                    <div class="col-md-4">
+                        <div class="banner__form">
+                            <h4 class="section_head center">Request a <span class="primary_color">free</span> quote</h4>
+                            <form class="contactForm" action="form.php" method="post">
+                                <div class="form-group field-container">
+                                    <input type="text" class="form-control form-field" id="name" name="name"
+                                        placeholder="Name" required="">
+                                    <img src="./images/icons/user.svg" class="field-icon">
+                                </div>
+
+                                <div class="form-group field-container">
+                                    <input type="email" class="form-control form-field" id="email" name="email"
+                                        placeholder="Email" required="">
+                                    <img src="./images/icons/mail.svg" class="field-icon">
+                                </div>
+
+                                <div class="form-group field-container">
+                                    <input type="text" class="form-control form-field" id="number" name="number"
+                                        placeholder="Contact Number" required="">
+                                    <img src="./images/icons/phone.svg" class="field-icon">
+                                </div>
+
+                                <div class="form-group field-container">
+                                    <input type="text" class="form-control form-field" name="skype" id="skype"
+                                        placeholder="SKype Id (Optional)">
+                                    <img src="./images/icons/skype.svg" class="field-icon">
+                                </div>
+
+                                <div class="form-group field-container">
+                                    <textarea class="form-control form-field" rows="4" id="comment" name="comment"
+                                        placeholder="Project Brief / Project Link"></textarea>
+                                    <img src="./images/icons/project.svg" class="field-icon">
+                                </div>
+
+                                <!-- File Upload  -->
+                                <!-- <div class="form-group form-upload">
+                                    <p><img src="./images/icons/attach.svg" class="form-upload-icon icon" /> <span
+                                            class="form-upload-label">Attachments (if any)</span></p>
+                                    <div class="file-uploader__message-area"></div>
+                                    <div class="file-chooser">
+                                        <input class="file-chooser__input" type="file">
+                                    </div>
+                                </div> -->
+                                <!-- file upload end -->
+                                <div class="btn-container center">
+                                    <button type="submit" id="send_email" name="submit" class="quoteBtn">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Features -->
+        <section class="feature">
+            <h4 class="page_head center">Development Features</h4>
+            <div class="container">
+                <div class="feature_content">
+                    <div class="feature_list">
+                        <i class="fas fa-mobile-alt feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">
+                                Responsive Pages</h4>
+                            <p class="feature_list_text">All the pages we code will render themselves correctly regardless of the device used whether it is laptop, desktop, mobile phone or tablets as we use responsive codes.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature_list">
+                        <i class="fas fa-spinner feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Fast Loading Pages</h4>
+                            <p class="feature_list_text">All the pages are tested for their loading speed and fully optimized for fast loading times as it has a positive impact on user-experience and search engine ranking.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature_content">
+                    <div class="feature_list">
+                        <i class="fas fa-globe feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">W3C Standards</h4>
+                            <p class="feature_list_text">The entire conversion adheres to W3C standards. As we use fully manual coding with experienced coding experts you do not have to worry about sloppy work and clumsy coding.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature_list">
+                        <i class="fas fa-cogs feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">
+                                Easy Customization</h4>
+                            <p class="feature_list_text">We focus on providing easy customization options. You will be able to make all the required customizations in few simple clicks. It will enable you to make cosmetic changes to the pages even if you choose to do that in future.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature_content">
+                    <div class="feature_list">
+                        <i class="fas fa-cubes feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Simplified Integration</h4>
+                            <p class="feature_list_text">You will have no issues with the integration of your pages to the website as the coding is widget ready. You will be able to get the page up and running fast without any issues.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature_list">
+                        <i class="far fa-file-code feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Semantic HTML Markup</h4>
+                            <p class="feature_list_text">The coding uses the latest semantic HTML markup standards. You can be sure of getting clutter free codes as per the latest industry standards. The coding comes with appropriate commenting so that it is easy to follow the codes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature_content">
+                    <div class="feature_list">
+                        <i class="fas fa-code feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Error Free Codes</h4>
+                            <p class="feature_list_text">Your codes are delivered only after it passes through stringent quality control measures. It is not only easy to integrate but our coding ensures seamless error free integration.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature_list">
+                        <i class="fab fa-searchengin feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">SEO-Friendly Markup</h4>
+                            <p class="feature_list_text">We understand the importance of providing you with pages that perform well in the search results and in particular Google search results page. All the pages are coded in a highly search engine friendly way for better ranking in Google and other popular search engines.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- optional Features -->
+        <section class="optionalFeature">
+            <h4 class="page_head center">Optional Features</h4>
+            <div class="container">
+                <div class="feature_content">
+                    <div class="feature_list">
+                        <i class="fas fa-paperclip feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Sticky Footer</h4>
+                            <p class="feature_list_text">Sticky footer feature helps you to convey the message that you
+                                wish to your audiences. It stays at the bottom of the page regardless of the resolution
+                                of your website.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature_list">
+                        <i class="fas fa-laptop-code feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Cross Device Compatibility</h4>
+                            <p class="feature_list_text">This feature helps your website to look same on ipad, iphone
+                                and android devices. Stop worrying about your websites shabby look on small devices or
+                                phones. It enhances the user-engagement on the website.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature_content">
+                    <div class="feature_list">
+                        <i class="fas fa-map-marked-alt feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Google Map Integration</h4>
+                            <p class="feature_list_text">Google map integration makes it easy for your website visitors and your prospective customers to locate your office fast in just a single click. This certainly enhances the user experience.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature_list">
+                        <i class="fas fa-file-invoice feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Microformat and Schema</h4>
+                            <p class="feature_list_text">It’s a web-based approach to semantic markup allows using
+                                existing HTML code & tags for conveying meta data. This feature helps you to see the
+                                greater consistency.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature_content">
+                    <div class="feature_list">
+                        <i class="fas fa-book-reader feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Screen Readers Compatibility</h4>
+                            <p class="feature_list_text">We develop websites with screen readers compatibility to help
+                                visually impaired can also check your website. With the help of screen readers your
+                                websites text is converted into synthesized audio it makes them to understand your
+                                website better.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature_list">
+                        <i class="fas fa-rocket feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Page Speed Optimization</h4>
+                            <p class="feature_list_text">This feature doesn’t only keep people on your website but also
+                                one of the important SEO aspects. We optimize images, HTML code, CSS and more.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- Why choose us -->
+        <section class="whyTeam">
+            <h4 class="page_head center">Why choose us?</h4>
+            <div class="container">
+                <div class="whyTeam_content">
+                    <div class="whyTeam_detail_box">
+                        <div class="whyTeam_detail_icon"><i class="fas fa-hands-helping"></i></div>
+                        <p class="whyTeam_detail_text">Non-Disclosure Agreement</p>
+                    </div>
+
+                    <div class="whyTeam_detail_box">
+                        <div class="whyTeam_detail_icon"><i class="fas fa-file-code"></i></div>
+                        <p class="whyTeam_detail_text">Highest Quality Markup</p>
+                    </div>
+
+                    <div class="whyTeam_detail_box">
+                        <div class="whyTeam_detail_icon"><i class="fas fa-laptop-code"></i></div>
+                        <p class="whyTeam_detail_text">Latest Browser Compatibility</p>
+                    </div>
+
+                    <div class="whyTeam_detail_box">
+                        <div class="whyTeam_detail_icon"><i class="fas fa-headset"></i></div>
+                        <p class="whyTeam_detail_text">365 Days Free Support</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Why choose us -->
+        <section class="process">
+            <h4 class="page_head center">Conversion Process</h4>
+            <div class="container">
+                <div class="delivery order_box">
+                    <div class="process_box_detail">
+                        <h4 class="process_box_head">Order</h4>
+                        <p class="process_box_text">Just give us your design files and requirements, and we will take it from there.</p>
+                    </div>
+                </div>
+                <div class="process_content">
+                    <div class="process_content_left">
+                        <div class="process_box_detail">
+                            <h4 class="process_box_head">Review</h4>
+                            <p class="process_box_text">JWe’ll work up the specs and give you a quote and estimated delivery time.</p>
+                        </div>
+                        <div class="process_box_icon"><i class="fas fa-file-code"></i></div>
+                        <div class="process_box_detail">
+                            <h4 class="process_box_head">Testing</h4>
+                            <p class="process_box_text">We thoroughly test your markup in all modern browsers, on all platforms and devices.</p>
+                        </div>
+                    </div>
+                    <div class="process_line"></div>
+                    <div class="process_content_right">
+                        <div class="process_box_icon"><i class="fas fa-file-signature"></i></div>
+                        <div class="process_box_detail">
+                            <h4 class="process_box_head">Development</h4>
+                            <p class="process_box_text">Our pros will swing into action and craft your HTML5 / CSS3 markup.</p>
+                        </div>
+                        <div class="process_box_icon"><i class="fas fa-clipboard-check"></i></i></div>
+                    </div>
+
+                </div>
+
+                <div class="delivery">
+                    <div class="process_box_detail">
+                        <h4 class="process_box_head">Delivery</h4>
+                        <p class="process_box_text">Your absolutely flawless markup is delivered to you.</p>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </section>
+
+    </div>
+    <!-- Footer -->
+    <footer class="footer" id="footer"> </footer>
+    <!-- Bottom Skype -->
+    <div class="fixed-bottom" id="bottomRight"> </div>
+    <!-- Scripts -->
+    <script src="./js/onscrollImgLoad.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/custom.js"></script>
+
+</body>
+
+</html>

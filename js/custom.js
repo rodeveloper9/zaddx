@@ -1,3 +1,24 @@
+// Header Footer Include File
+$(function () {
+    $("#rightSocial").load("socialIcons");
+    $("#header").load("header");
+    $("#footer").load("footer");
+    $("#bottomRight").load("bottomRight");
+});
+
+// Mobile Menu
+function openNav(type) {
+    var bodyData = document.querySelector('html');
+    if (type == 'open') {
+        document.getElementById("sideNav").style.width = "100%";
+    }
+
+    if (type == 'close') {
+        document.getElementById("sideNav").style.width = "0";
+    }
+    bodyData.classList.toggle("modalScroll");
+}
+
 //Function to show hide modal
 function showModal(id, showClass) {
     var queryData = document.querySelector(id);
@@ -5,6 +26,7 @@ function showModal(id, showClass) {
     queryData.classList.toggle(showClass);
     bodyData.classList.toggle("modalScroll");
 }
+
 // Function to close modal
 function hideModal(id, showClass) {
     var queryData = document.querySelector(id);
@@ -12,6 +34,11 @@ function hideModal(id, showClass) {
     queryData.classList.toggle(showClass);
     bodyData.classList.toggle("modalScroll");
 }
+
+function showSubmenu () {
+    document.getElementById('subMenu').style.display = 'block'
+}
+
 // To load offer form and check cookie
 $(window).on("load", function () {
     var offer = getCookie("offer");
@@ -27,11 +54,12 @@ $(document).click(function (event) {
         $("body").find(".staticmodal").removeClass("staticmodal-on");
     }
 });
+
 // To set cookie once user submit form
 function checkCookie() {
     var offer = document.getElementById('offerNumber').value;
-    if (offer === '') {''}
-    else { setCookie("offer", true, 1); }
+    if (offer === '') { '' }
+    else { setCookie("offer", true, 8589589); }
 };
 
 // On scroll header fixed

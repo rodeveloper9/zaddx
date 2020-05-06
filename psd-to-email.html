@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- other files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="icon" href="./icons/icon.png" type="image/gif" sizes="16x16">
+    <title>PSD to Email Templates</title>
+</head>
+
+<body>
+    <div class="psdHtml-wrapper">
+        <!-- Floating right side icons -->
+        <div class="floating-icon right-social" id="rightSocial"> </div>
+        <!-- header -->
+        <header class="header" id="header"> </header>
+        <!-- content start -->
+        <div class="detailBanner">
+            <div class="container">
+                <div class="row detailBanner__content">
+                    <div class="col-md-8">
+                        <div class="banner__left">
+                            <h1 class="banner_head"><span class="primary_color">PSD to Email Templates</span> Development</h1>
+                            <h4 class="banner_subhead">We've got some of the best solutions for your email marketing needs:unbeatable code quality, one day turnaround, and the widest cross-platform compatibility. So buckle up and start sending better emails today.</h4>
+
+                            <a href="javascript:void(0)" onclick="showModal('#talkModal', 'staticmodal-on')" class="quoteBtn">Start a Project </a>
+
+                        </div>
+                    </div>
+
+                    <!-- Banner Form -->
+                    <div class="col-md-4">
+                        <div class="banner__form">
+                            <h4 class="section_head center">Request a <span class="primary_color">free</span> quote</h4>
+                            <form class="contactForm" action="form.php" method="post">
+                                <div class="form-group field-container">
+                                    <input type="text" class="form-control form-field" id="name" name="name"
+                                        placeholder="Name" required="">
+                                    <img src="./images/icons/user.svg" class="field-icon">
+                                </div>
+
+                                <div class="form-group field-container">
+                                    <input type="email" class="form-control form-field" id="email" name="email"
+                                        placeholder="Email" required="">
+                                    <img src="./images/icons/mail.svg" class="field-icon">
+                                </div>
+
+                                <div class="form-group field-container">
+                                    <input type="text" class="form-control form-field" id="number" name="number"
+                                        placeholder="Contact Number" required="">
+                                    <img src="./images/icons/phone.svg" class="field-icon">
+                                </div>
+
+                                <div class="form-group field-container">
+                                    <input type="text" class="form-control form-field" name="skype" id="skype"
+                                        placeholder="SKype Id (Optional)">
+                                    <img src="./images/icons/skype.svg" class="field-icon">
+                                </div>
+
+                                <div class="form-group field-container">
+                                    <textarea class="form-control form-field" rows="4" id="comment" name="comment"
+                                        placeholder="Project Brief / Project Link"></textarea>
+                                    <img src="./images/icons/project.svg" class="field-icon">
+                                </div>
+
+                                <!-- File Upload  -->
+                                <!-- <div class="form-group form-upload">
+                                    <p><img src="./images/icons/attach.svg" class="form-upload-icon icon" /> <span
+                                            class="form-upload-label">Attachments (if any)</span></p>
+                                    <div class="file-uploader__message-area"></div>
+                                    <div class="file-chooser">
+                                        <input class="file-chooser__input" type="file">
+                                    </div>
+                                </div> -->
+                                <!-- file upload end -->
+                                <div class="btn-container center">
+                                    <button type="submit" id="send_email" name="submit" class="quoteBtn">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Features -->
+        <section class="feature">
+            <h4 class="page_head center ">Development Features</h4>
+            <div class="container">
+                <div class="feature_content">
+                    <div class="feature_list">
+                        <i class="fas fa-mail-bulk feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Compatibility</h4>
+                            <p class="feature_list_text">Aol webmail, Hotmail, Gmail, Applemail, Outlook—we’re compatible with just about everything.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature_list">
+                        <i class="fas fa-table feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Table-Based Markup</h4>
+                            <p class="feature_list_text">Our use of the appropriate tags ensures maximum compatibility with emailer clients, allowing you to utilize every lead.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature_content">
+                    <div class="feature_list">
+                        <i class="fas fa-spinner feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Optimized Images</h4>
+                            <p class="feature_list_text">It allows one website to provide a great user-experience across many devices and screen sizes, and it also makes managing your SEO strategy easier.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature_list">
+                        <i class="fas fa-user-cog feature_list_icon"></i>
+                        <div class="feature_list_content">
+                            <h4 class="feature_list_head">Easy to Manage</h4>
+                            <p class="feature_list_text">Our semantic coding is simple and easy to work with.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Why choose us -->
+        <section class="whyTeam">
+            <h4 class="page_head center">Why choose us?</h4>
+            <div class="container">
+                <div class="whyTeam_content">
+                    <div class="whyTeam_detail_box">
+                        <div class="whyTeam_detail_icon"><i class="fas fa-hands-helping"></i></div>
+                        <p class="whyTeam_detail_text">Non-Disclosure Agreement</p>
+                    </div>
+
+                    <div class="whyTeam_detail_box">
+                        <div class="whyTeam_detail_icon"><i class="fas fa-file-code"></i></div>
+                        <p class="whyTeam_detail_text">Highest Quality Markup</p>
+                    </div>
+
+                    <div class="whyTeam_detail_box">
+                        <div class="whyTeam_detail_icon"><i class="fas fa-laptop-code"></i></div>
+                        <p class="whyTeam_detail_text">Latest Browser Compatibility</p>
+                    </div>
+
+                    <div class="whyTeam_detail_box">
+                        <div class="whyTeam_detail_icon"><i class="fas fa-headset"></i></div>
+                        <p class="whyTeam_detail_text">365 Days Free Support</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Why choose us -->
+        <section class="process">
+            <h4 class="page_head center">Conversion Process</h4>
+            <div class="container">
+                <div class="delivery order_box">
+                    <div class="process_box_detail">
+                        <h4 class="process_box_head">Order</h4>
+                        <p class="process_box_text">Just give us your design files and requirements, and we will take it from there.</p>
+                    </div>
+                </div>
+                <div class="process_content">
+                    <div class="process_content_left">
+                        <div class="process_box_detail">
+                            <h4 class="process_box_head">Review</h4>
+                            <p class="process_box_text">JWe’ll work up the specs and give you a quote and estimated delivery time.</p>
+                        </div>
+                        <div class="process_box_icon"><i class="fas fa-file-code"></i></div>
+                        <div class="process_box_detail">
+                            <h4 class="process_box_head">Testing</h4>
+                            <p class="process_box_text">We thoroughly test your markup in all modern browsers, on all platforms and devices.</p>
+                        </div>
+                    </div>
+                    <div class="process_line"></div>
+                    <div class="process_content_right">
+                        <div class="process_box_icon"><i class="fas fa-file-signature"></i></div>
+                        <div class="process_box_detail">
+                            <h4 class="process_box_head">Development</h4>
+                            <p class="process_box_text">Our pros will swing into action and craft your HTML5 / CSS3 markup.</p>
+                        </div>
+                        <div class="process_box_icon"><i class="fas fa-clipboard-check"></i></i></div>
+                    </div>
+
+                </div>
+
+                <div class="delivery">
+                    <div class="process_box_detail">
+                        <h4 class="process_box_head">Delivery</h4>
+                        <p class="process_box_text">Your absolutely flawless markup is delivered to you.</p>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </section>
+
+    </div>
+    <!-- Footer -->
+    <footer class="footer" id="footer"> </footer>
+    <!-- Bottom Skype -->
+    <div class="fixed-bottom" id="bottomRight"> </div>
+    <!-- Scripts -->
+    <script src="./js/onscrollImgLoad.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/custom.js"></script>
+
+</body>
+
+</html>

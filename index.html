@@ -30,28 +30,9 @@
 <body>
     <div class="zaddx-wrapper">
         <!-- Floating right side icons -->
-        <div class="floating-icon right-social">
-            <a href="https://www.facebook.com/zaddx" target="_blank"><img src="./images/fb.png"
-                    class="social__icon" /></a>
-            <a href="https://twitter.com/Zeddx4" target="_blank"><img src="./images/twitter.png"
-                    class="social__icon" /></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="./images/insta.png"
-                    class="social__icon" /></a>
-        </div>
-        <header class="header ">
-            <div class="container">
-                <nav>
-                    <a href="#"><img src="./images/logo.png" class="logo" /></a>
-                    <!-- <div class="menu">
-                        <a href="#;" class="menu-link">Contact</a>
-                    </div> -->
-                    <div class="topsocial">
-                        <a href="javascript:void(0)" onclick="showModal('#talkModal', 'staticmodal-on')" class="topsocial-link">Let's Talk</a>      
-                    </div>
-                </nav>
-
-            </div>
-        </header>
+        <div class="floating-icon right-social" id="rightSocial"> </div>
+        <!-- header -->
+        <header class="header" id="header"> </header>
         <!-- Banner Section -->
         <div class="banner">
             <div class="container">
@@ -61,11 +42,7 @@
                             <h1 class="banner_head">Hire <span class="primary_color">HTML CSS</span> developers</h1>
                             <h4 class="banner_subhead">Experience Google loved & lightning <span
                                     class="primary_color">fast web pages</span></h4>
-                            <p class="banner_text">We Convert PSD to HTML. Hire our HTML 5 developers on hourly or full
-                                time (dedicated monthly)
-                                time basis. We will be your User Experience partners. The offshore HTML 5 developers at
-                                ZaddX are also well versed
-                                with the latest tools and techniques of all frontend solutions.</p>
+                            <p class="banner_text">We Convert PSD to HTML. Hire our HTML 5 developers on hourly or full time (dedicated monthly) time basis. We will be your User Experience partners. The offshore HTML 5 developers at ZaddX are also well versed with the latest tools and techniques of all frontend solutions.</p>
 
                             <h4 class="section_head">Proficiency of our <span class="primary_color">Front-End</span>
                                 Developers </h4>
@@ -154,9 +131,9 @@
         <section class="benefits">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-12">
                         <div class="benefits_content">
-                            <h4 class="page_head">Benefits</h4>
+                            <h4 class="page_head center">Benefits</h4>
                             <ul class="benefits-list">
                                 <li class="benefits-list-item"><img src="./images/icons/benefitList.jpg"
                                         class="benefits-list-item-icon">
@@ -165,6 +142,9 @@
                                 <li class="benefits-list-item"><img src="./images/icons/benefitList.jpg"
                                         class="benefits-list-item-icon">
                                     <span>Strict NDA Terms</span></li>
+                                    <li class="benefits-list-item"><img src="./images/icons/benefitList.jpg"
+                                        class="benefits-list-item-icon">
+                                    <span>Highest Quality Markup</span></li>
 
                             </ul>
 
@@ -176,6 +156,9 @@
                                 <li class="benefits-list-item"><img src="./images/icons/benefitList.jpg"
                                         class="benefits-list-item-icon">
                                     <span>Periodic Reports</span></li>
+                                    <li class="benefits-list-item"><img src="./images/icons/benefitList.jpg"
+                                        class="benefits-list-item-icon">
+                                    <span>100% Satisfaction Gurantee</span></li>
 
                             </ul>
 
@@ -187,25 +170,26 @@
                                 <li class="benefits-list-item"><img src="./images/icons/benefitList.jpg"
                                         class="benefits-list-item-icon">
                                     <span>Professional Developers</span></li>
+                                    <li class="benefits-list-item"><img src="./images/icons/benefitList.jpg"
+                                        class="benefits-list-item-icon">
+                                    <span>SEO Semantic Coding</span></li>
 
                             </ul>
-                        </div>
-                    </div>
 
-                    <div class="col-md-4">
-                        <div class="benefits_help center">
-                            <h4 class="page_head">Need Help ?</h4>
+                            <ul class="benefits-list">
+                                <li class="benefits-list-item"><img src="./images/icons/benefitList.jpg"
+                                        class="benefits-list-item-icon">
+                                    <span>Dedicated Project Manager</span></li>
 
-                            <a href="https://api.whatsapp.com/send?phone=918875603044" target="_blank"
-                                class="benefits_help--list"><img src="./images/icons/whatsapp.svg"
-                                    class="benefits_help--icon" /> <span>+91- 8875603044</span></a>
+                                <li class="benefits-list-item"><img src="./images/icons/benefitList.jpg"
+                                        class="benefits-list-item-icon">
+                                    <span>Non-Disclosure Agreement</span></li>
+                                    <li class="benefits-list-item"><img src="./images/icons/benefitList.jpg"
+                                        class="benefits-list-item-icon">
+                                    <span>Latest Browser Compatible</span></li>
 
-                            <a href="mailto:zeddx07@gmail.com" class="benefits_help--list"><img
-                                    src="./images/icons/mail.svg" class="benefits_help--icon" />
-                                <span>zeddx07@gmail.com</span></a>
+                            </ul>
 
-                            <a href="skype:zaddx9?add" class="benefits_help--list"><img src="./images/icons/skype.svg"
-                                    class="benefits_help--icon" /> <span>zaddx9</span></a>
                         </div>
                     </div>
                 </div>
@@ -288,7 +272,40 @@
 
 
         </section>
+        <!--  Statistics-->
+        <section class="stats">
+            <h4 class="page_head center">Our <span class="primary_color">Facts</span></h4>
+            <div class="container">
+                <div class="stats__content">
+                    <div class="stats__box">
+                        <div class="stats__box--content">
+                            <i class="fas fa-flag stats__icon"></i>
+                            <h2 class="stats__head">2004</h2>
+                            <p class="stats__text">In Service</p>
+                        </div>
 
+                        <div class="stats__box--content">
+                            <i class="fas fa-smile stats__icon"></i>
+                            <h2 class="stats__head">10000+</h2>
+                            <p class="stats__text">Happy Clients</p>
+                        </div>
+
+                        <div class="stats__box--content">
+                            <i class="fas fa-clipboard-check stats__icon"></i>
+                            <h2 class="stats__head">50000+</h2>
+                            <p class="stats__text">Completed Projects</p>
+                        </div>
+
+                        <div class="stats__box--content">
+                            <i class="fas fa-user-graduate stats__icon"></i>
+                            <h2 class="stats__head">50+</h2>
+                            <p class="stats__text">Rockstars</p>
+                        </div>
+                    </div>
+                    <img src="./images/statsBg.png" draggable="false" class="stats__img" />
+                </div>
+            </div>
+        </section>
         <!-- Testimonial -->
         <section class="testimonial">
             <h4 class="page_head center">What our <span class="primary_color">client</span> say</h4>
@@ -466,20 +483,9 @@
         </section>
 
         <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-container">
-                    <a href="#"><img data-src="./images/logo.png" src="./images/loading.gif" class="logo" /></a>
-                    <p class="rights-text">&copy; 2020 || All Rights Reserved.</p>
-                </div>
-
-            </div>
-        </footer>
+        <footer class="footer" id="footer"> </footer>
         <!-- Bottom Skype -->
-        <div class="fixed-bottom">
-            <a href="skype:zaddx9?add" target="_blank"><img
-                    src="./images/skype.png" class="social__icon" /></a>
-        </div>
+        <div class="fixed-bottom" id="bottomRight"> </div>
     </div>
 
      <!-- On load Offer popup -->
@@ -501,58 +507,6 @@
                     <button type="submit" id="form_btn" name="submit" class="quoteBtn"
                         onclick="checkCookie();">Submit</button>
                 </form>
-            </div>
-        </div>
-    </div>
-
-     <!-- Let's talk popup -->
-    <div class=" " id="talkModal">
-        <div class="staticmodal-innercontent">
-            <span class="modaldelete" onclick="hideModal('#talkModal', 'staticmodal-on')">X</span>
-            <div class="modal-body offer-modal talk-modal">
-                <div class="modal-image">
-                    <img src="./images/talkPopupImg.jpg" class="" />
-                </div>
-                <div class="talk-content">
-                    <div class="talk-content-details">
-                        <h2 class="talk-content-head">Wanna Talk? We would love to hear.</h2>
-                        <p class="talk-content-text">For sales queries, call us at:</p>
-                    <div class="talk-icon-box">
-                        <a href="tel:08875603044" class="talk-content-link" >
-                            <img src="./images/icons/phone-call.svg" class="talk-content-icon" />
-                            <span>+91 8875603044</span>
-                        </a>
-
-                        <a href="tel:08875603044" class="talk-content-link" >
-                            <img src="./images/icons/skype-talk.svg" class="talk-content-icon" />
-                            <span>zaddx9</span>
-                        </a>
-
-                        <a href="https://api.whatsapp.com/send?phone=918875603044" target="_blank" class="talk-content-link whatsapp">
-                            <img src="./images/icons/whatsappOrig.svg" class="talk-content-icon" />
-                            <span>+91 8875603044</span>
-                        </a>
-
-                        <a href="mailto:zeddx07@gmail.com" target="_blank" class="talk-content-link mail" >
-                            <img src="./images/icons/mailRound.svg" class="talk-content-icon">
-                            <span>zeddx07@gmail.com</span>
-                        </a>
-
-                    </div>   
-                    </div>
-                    <div class="talk-content-social">
-                        <h2 class="talk-content-head">Connect on Social Media.</h2>
-                        <p class="talk-content-text">For offers, Follow us on:</p>
-                        <div class="talk-social-box">
-                            <a href="https://www.facebook.com/zaddx" target="_blank"><img src="./images/fb.png"
-                                class="social__icon" /></a>
-                        <a href="https://twitter.com/Zeddx4" target="_blank"><img src="./images/twitter.png"
-                                class="social__icon" /></a>
-                        <a href="https://www.instagram.com" target="_blank"><img src="./images/insta.png"
-                                class="social__icon" /></a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
