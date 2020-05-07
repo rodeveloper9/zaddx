@@ -11,6 +11,8 @@
     .staticmodal-on .staticmodal-innercontent {width: 95%;}
     #enquiryModal .modal-dialog { width: 95%;}
     .logo {width: 50px;}
+    /* Dropdown */
+    .submenuContain {display: block}
     #timer {font-size: 25px;}
     nav{padding: 0;}
     .menu{display: none;}
@@ -29,6 +31,10 @@
     .expert-line, .experts__top {display: none;}
     .expertsContainer .experts__content {margin-bottom: 2rem;}
     .expertsContainer .experts__content:last-child {margin: 0;}
+    /* Stats */
+    .stats__content {flex-direction: column;}
+    .stats__img, .stats__box {width: 100%;}
+    .stats__box--content:nth-last-child(-n+2) {margin-bottom: 2em;}
     .testimonial{padding: 5rem 0 0;}
     .testimonialSlide.slick-slider .slick-list {height: 420px !important;}
     .faqContainer--list--title {font-size: 14px;line-height: 1.2;padding-right: 15px;}
@@ -55,5 +61,15 @@
     .process_content_left {margin-right: 15px;}
     .process_box_icon:after {width: 40px;}
     .order_box:after {left: 44.7%;}
+    /* about us page */
+    .about_img {display: none;}
+    .vision_content, .strip_content, .strip_content-right {flex-direction: column;}
+    .strip_content-left, .strip_content-right {width: 100%;}
+    .vision_content-img {margin-bottom: 2rem;}
+    .strip_content-box {width: 100%;margin-left: 0px;margin-top: 2rem;}
+    /* Footer */
+    .footer-container {flex-wrap: wrap;}
+    .footer_box {width: 50%;margin-bottom: 25px;}
+    .footer_box:last-child {width: 100%;margin-bottom: 0;text-align: center;}
   
   }
