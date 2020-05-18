@@ -729,16 +729,20 @@ h4.testimonialSlide__box--head {margin-bottom: 10px;}
 .thankyou__content .quoteBtn {margin-top: 20px;}
 
 /* Portfolio CSS */
-.portfolioContent {display: flex;justify-content: space-between;margin-bottom: 25px;}
-.portfolioContent_box {width: 50%;margin-right: 25px;position: relative;text-align: center;cursor: pointer;box-shadow: 0 0 15px 5px rgba(0, 0, 0, .07);border: 8px solid #f5f5f5;overflow: hidden;height: 315px;}
+.portfolio  {background: #fff;}
+.portfolio .page_head {margin-bottom: 4rem;}
+.portfolioContent {display: flex;justify-content: space-between;margin-bottom: 50px;}
+.portfolioContent_box {width: 50%;margin-right: 50px;position: relative;text-align: center;cursor: pointer;box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .4);height: 450px;overflow: hidden;}
+.portfolioContent_img{max-width: 100%;height: auto;position: absolute;z-index: 0;margin: auto;
+left: 0;right: 0;padding: 0;}    
 .portfolioContent_box:last-child {margin-right: 0;}
-.portfolioContent_img {width: 100%;display: block;position: relative;opacity: .8;}
+.portfolioContent_img {width: 100%;display: block;;opacity: .8;}
 .portfolio__tech {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 25%;
+    height: 20%;
     background: #f7666a;
     -webkit-transition: -webkit-transform .35s;
     transition: transform .35s;
@@ -870,3 +874,6 @@ h4.testimonialSlide__box--head {margin-bottom: 10px;}
 .static_page h5 {margin:5px 0}
 .static_page ul li, .listingPara p{position: relative;padding-left: 15px;margin-top: 5px;}
 .static_page ul li:before, .listingPara p:before {content: '';background: #ff0000;width: 5px;height: 5px;border-radius: 50%;position: absolute;top: 5px;left: 0;}
+
+/* Right side social icons */
+.floating-icon.right-social {display: none;}

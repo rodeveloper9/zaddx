@@ -1,6 +1,5 @@
 // Header Footer Include File
 $(function () {
-    $("#rightSocial").load("socialIcons");
     $("#header").load("header");
     $("#footer").load("footer");
     $("#bottomRight").load("bottomRight");
