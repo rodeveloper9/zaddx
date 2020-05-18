@@ -71,5 +71,7 @@
     .footer-container {flex-wrap: wrap;}
     .footer_box {width: 50%;margin-bottom: 25px;}
     .footer_box:last-child {width: 100%;margin-bottom: 0;text-align: center;}
-  
+    /* Portfolio CSS */
+    .portfolioContent {flex-direction: column;margin-bottom: 0;}
+    .portfolioContent_box {width: 100%; margin-right: 0;margin-bottom: 25px;}
   }
